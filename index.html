@@ -36,8 +36,8 @@
       #recipeCard {
         background-color: white;
         margin: auto;
-        width: 50%;
-        padding: 40px;
+        max-width: 800px;
+        padding: 35px;
         border-radius: 20px;
       }
 
@@ -48,6 +48,7 @@
 
       h1 {
         color: hsl(24, 5%, 18%);
+        font-size: 2.2rem;
       }
 
       h2 {
@@ -56,23 +57,36 @@
 
       #prep {
         background-color: hsl(330, 100%, 98%);
-        padding: 20px;
+        padding: 5px 30px;
         border-radius: 10px;
       }
 
+    
       p,
       li,
       td {
         font-family: outfit;
+        color: hsl(30, 10%, 34%);
       }
 
       li {
         padding: 5px;
       }
 
+
+      .prepMark li::marker {
+        color: hsl(332, 51%, 32%);
+      }
+
       h3 {
         color: hsl(332, 51%, 32%);
         font-family: "outfit";
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+      }
+
+      hr {
+        border: 0.1px solid grey;
       }
 
       table {
@@ -81,7 +95,7 @@
       }
 
       tr {
-        border-bottom: 1px solid black;
+        border-bottom: 0.5px solid grey;
       }
 
       td {
@@ -90,6 +104,10 @@
 
       .nutrVal {
         color: hsl(14, 45%, 36%);
+      }
+
+      .row_without_border {
+        border: none;
       }
 
       footer {
@@ -135,9 +153,9 @@
         <div id="prep">
           <h3>Preparation time</h3>
           <ul>
-            <li>Approximately 10 minutes</li>
-            <li>Preparation: 5 minutes</li>
-            <li>Cooking: 5 minutes</li>
+            <li class="prepMark"><b>Total:</b> Approximately 10 minutes</li>
+            <li class="prepMark"><b>Preparation:</b> 5 minutes</li>
+            <li class="prepMark"><b>Cooking:</b> 5 minutes</li>
           </ul>
         </div>
 
@@ -205,19 +223,19 @@
             additional fillings.
           </p>
           <table>
-            <tr>
+            <tr class="row_with_border">
               <td>Calories</td>
               <td class="nutrVal">277kcal</td>
             </tr>
-            <tr>
+            <tr class="row_with_border">
               <td>Carbs</td>
               <td class="nutrVal">0g</td>
             </tr>
-            <tr>
+            <tr class="row_with_border">
               <td>Protein</td>
               <td class="nutrVal">20g</td>
             </tr>
-            <tr>
+            <tr class="row_without_border">
               <td>Fat</td>
               <td class="nutrVal">22g</td>
             </tr>
