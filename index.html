@@ -38,6 +38,7 @@
         margin: auto;
         max-width: 800px;
         padding: 35px;
+        margin-top: 30px;
         border-radius: 20px;
       }
 
@@ -54,6 +55,7 @@
 
       h2 {
         color: hsl(14, 45%, 36%);
+        font-size: 1.5rem;
       }
 
       #prep {
@@ -71,10 +73,12 @@
 
       li {
         padding: 5px;
+        padding-left: 20px;
       }
 
       ul, ol {
-        list-style-position: in;
+        padding: 0;
+        padding-left: 22px;
       }
 
       .prepMark::marker {
@@ -89,15 +93,16 @@
         color: hsl(14, 45%, 36%);
       }
 
-      h3 {
+      .prepHL {
         color: hsl(332, 51%, 32%);
         font-family: "outfit";
+        font-size: 1.3rem;
         margin-bottom: 0px;
         padding-bottom: 0px;
       }
 
       hr {
-        border: 0.1px solid grey;
+        border: 0.1px solid #BDBDBD;
       }
 
       table {
@@ -110,7 +115,8 @@
       }
 
       td {
-        padding: 7px;
+        padding: 16px;
+        margin-left: 20px;
       }
 
       .nutrVal {
@@ -119,6 +125,30 @@
 
       .row_without_border {
         border: none;
+      }
+
+      @media (max-width: 576px) {
+        body {
+          background-color: white;
+          padding-top: 0;
+          margin-top: 0;
+        }
+        #recipeCard {
+          padding-top: 0;
+          margin-top: 0;
+        }
+        img {
+          padding: 0;
+          margin: 0;
+          border-radius: 0px;
+          width: 120%;
+        }
+        h1 {
+          font-size: 1.9rem;
+        }
+        h2 {
+          font-size: 1.4rem;
+        }
       }
 
       footer {
@@ -162,7 +192,7 @@
         </div>
 
         <div id="prep">
-          <h3>Preparation time</h3>
+          <h2 class="prepHL">Preparation time</h3>
           <ul>
             <li class="prepMark"><b>Total:</b> Approximately 10 minutes</li>
             <li class="prepMark"><b>Preparation:</b> 5 minutes</li>
