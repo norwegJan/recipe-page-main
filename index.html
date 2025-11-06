@@ -28,17 +28,30 @@
       }
 
       img {
+        background-color: white;
+        padding-top: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 0;
+        margin-top: ;
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
 
-      #recipeCard {
+      #recipecard {
+        margin: auto;
+        background-color: white;
+        margin-top: 30px;
+
+      }
+
+      #textcontent {
         background-color: white;
         margin: auto;
         max-width: 800px;
-        padding: 35px;
-        margin-top: 30px;
+        padding: 1rem 3rem;
+        margin-top: 0;
         border-radius: 20px;
       }
 
@@ -141,7 +154,8 @@
           padding: 0;
           margin: 0;
           border-radius: 0px;
-          width: 120%;
+          width: 100%;
+          height: auto;
         }
         h1 {
           font-size: 1.9rem;
@@ -174,13 +188,15 @@
 
   <body>
     <main>
-      <div id="recipeCard">
-        <img
-          src="./assets/images/image-omelette.jpeg"
-          alt="photo of tasty omelette"
-          height="300px"
-        />
 
+      
+      <div id="recipeCard">
+
+       <img
+          src="./assets/images/image-omelette.jpeg"
+          alt="photo of tasty omelette" height="400px"/> 
+        
+      <div id="textcontent">
         <div id="intro">
           <h1>Simple Omelette Recipe</h1>
 
@@ -283,7 +299,8 @@
           </table>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
     <footer>
       <div class="attribution">
