@@ -21,49 +21,55 @@
 
     <title>Frontend Mentor | Recipe page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      body {
-        background-color: hsl(30, 54%, 90%);
+
+      * {
+      margin: 0;
+      padding: 0;
       }
 
       img {
-        background-color: white;
-        padding-top: 3rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
-        padding-bottom: 0;
-        margin-top: ;
-        width: 100%;
+        max-width: 100%;
         height: auto;
         border-radius: 10px;
       }
 
-      #recipecard {
+      body {
+        background-color: hsl(30, 54%, 90%);
+      }
+
+      #recipeCard {
         margin: auto;
+        max-width: 700px;
+        padding: 3rem;
         background-color: white;
-        margin-top: 30px;
+        margin-top: 50px;
+        border-radius: 10px;
 
       }
 
-      #textcontent {
+       #textcontent {
         background-color: white;
         margin: auto;
-        max-width: 800px;
-        padding: 1rem 3rem;
-        margin-top: 0;
-        border-radius: 20px;
+        margin-top: 20px;
+        padding-top: 10px;
       }
 
       
       h1,
       h2 {
         font-family: "young serif";
+        font-weight: 400;
+        padding: 1rem 0;
       }
 
       h1 {
         color: hsl(24, 5%, 18%);
         font-size: 2.2rem;
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding-top: 0;
+        padding-bottom: 0;
       }
 
       h2 {
@@ -73,15 +79,18 @@
 
       #prep {
         background-color: hsl(330, 100%, 98%);
-        padding: 5px 30px;
+        padding: 2rem 2rem;
         border-radius: 10px;
+        margin: 1rem 0;
       }
 
       p,
       li,
       td {
         font-family: outfit;
+        font-weight: 400;
         color: hsl(30, 10%, 34%);
+        padding: 1rem 0;
       }
 
       li {
@@ -109,13 +118,21 @@
       .prepHL {
         color: hsl(332, 51%, 32%);
         font-family: "outfit";
+        font-weight: 600;
         font-size: 1.3rem;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
+        padding-top: 0;
+        padding-left: 0;
+        margin-top: 0;
+        margin-left: 0;
+      }
+
+      #prep > ul {
+        margin-left: 1rem;
       }
 
       hr {
         border: 0.1px solid #BDBDBD;
+        margin: 1.5rem 0;
       }
 
       table {
@@ -147,9 +164,10 @@
           margin-top: 0;
         }
         #recipeCard {
-          padding-top: 0;
+          padding: 0;
           margin-top: 0;
         }
+
         img {
           padding: 0;
           margin: 0;
@@ -157,8 +175,15 @@
           width: 100%;
           height: auto;
         }
+
+        #textcontent {
+          padding: 0.5rem 2.5rem;
+          margin-top: 0;
+        }
+
         h1 {
           font-size: 1.9rem;
+          padding-top: 1rem;
         }
         h2 {
           font-size: 1.4rem;
@@ -192,7 +217,7 @@
       
       <div id="recipeCard">
 
-       <img
+       <img class="omeletteimg"
           src="./assets/images/image-omelette.jpeg"
           alt="photo of tasty omelette" height="400px"/> 
         
